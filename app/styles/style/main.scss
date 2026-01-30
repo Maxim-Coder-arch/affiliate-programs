@@ -655,6 +655,9 @@ body {
         background-position: center;
         z-index: -1;
         background-attachment: fixed;
+        @media screen and (max-width: 760px) {
+            display: none;
+        }
     }
 }
 .bank-products {
@@ -698,6 +701,8 @@ body {
         @include font-style(100);
         font-size: 1rem;
         color: $color-dark4;
+        max-height: 150px;
+        overflow-y: auto;
     }
     &:hover {
         background-color: #0000003a;
@@ -741,8 +746,8 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 .bank-products-block {
     width: 90%;
@@ -846,6 +851,9 @@ body {
     background-image: url("/images/2151918252.jpg");
     position: relative;
     background-attachment: fixed;
+    @media screen and (max-width: 760px) {
+        background-attachment: scroll;
+    }
 }
 .finish-block {
     background-color: #1c1c1c;

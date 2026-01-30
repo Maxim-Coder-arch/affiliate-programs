@@ -94,7 +94,7 @@ export default function HeroSection(): JSX.Element {
                             delay: .4,
                             ease: "easeOut"
                         }}
-                        >Сделать карту</motion.a>
+                        >Банковские продукты</motion.a>
                     </div>
                 </div>
             </div>

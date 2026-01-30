@@ -927,6 +927,11 @@ body {
   z-index: -1;
   background-attachment: fixed;
 }
+@media screen and (max-width: 760px) {
+  .bg-attachment::before {
+    display: none;
+  }
+}
 
 .bank-products {
   width: 100vw;
@@ -977,6 +982,8 @@ body {
   font-style: normal;
   font-size: 1rem;
   color: #736D6A;
+  max-height: 150px;
+  overflow-y: auto;
 }
 .bank-product-card:hover {
   background-color: rgba(0, 0, 0, 0.2274509804);
@@ -1025,8 +1032,8 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .bank-products-block {
@@ -1137,6 +1144,11 @@ body {
   background-image: url("/images/2151918252.jpg");
   position: relative;
   background-attachment: fixed;
+}
+@media screen and (max-width: 760px) {
+  .footer-image {
+    background-attachment: scroll;
+  }
 }
 
 .finish-block {
