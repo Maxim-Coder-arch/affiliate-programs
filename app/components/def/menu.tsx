@@ -38,8 +38,8 @@ const NavItem = ({ item, index, isVisible, variant = 'default' }: {
       transition: { duration: 0.5, delay: 0.1 * index, ease: "easeOut" }
     },
     mobile: {
-      initial: { opacity: 0, width: "200px" },
-      animate: isVisible ? { opacity: 1, width: "100%" } : {},
+      initial: { opacity: 0, y: "-5px" },
+      animate: isVisible ? { opacity: 1, y: 0 } : {},
       transition: { duration: 0.6, delay: 0.2 * index, ease: "easeInOut" }
     }
   };
